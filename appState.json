@@ -1,0 +1,162 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "8f8143ed-6f36-4b66-b6b5-0063b859e3de": {
+        "id": "8f8143ed-6f36-4b66-b6b5-0063b859e3de",
+        "parent": null,
+        "name": "InventariosKOF",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "2c69bf77-b9cf-483a-bf15-2989658bff35",
+          "a6c22d71-d855-44aa-b1f9-6f4c435fc39f",
+          "61298d36-978d-46ba-bb53-5b0ea572b67b"
+        ],
+        "isRemovable": false,
+        "filePath": "InventariosKOF"
+      },
+      "2c69bf77-b9cf-483a-bf15-2989658bff35": {
+        "id": "2c69bf77-b9cf-483a-bf15-2989658bff35",
+        "parent": "8f8143ed-6f36-4b66-b6b5-0063b859e3de",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "InventariosKOF/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "a6c22d71-d855-44aa-b1f9-6f4c435fc39f": {
+        "id": "a6c22d71-d855-44aa-b1f9-6f4c435fc39f",
+        "parent": "8f8143ed-6f36-4b66-b6b5-0063b859e3de",
+        "name": "inventarios.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "InventariosKOF/inventarios.py",
+        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusWest2InventarioGatewayinventarioany",
+            "config": {}
+          }
+        ]
+      },
+      "61298d36-978d-46ba-bb53-5b0ea572b67b": {
+        "id": "61298d36-978d-46ba-bb53-5b0ea572b67b",
+        "parent": "8f8143ed-6f36-4b66-b6b5-0063b859e3de",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "InventariosKOF/__init__.py",
+        "code": ""
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "8f8143ed-6f36-4b66-b6b5-0063b859e3de",
+    "openFiles": [
+      "2c69bf77-b9cf-483a-bf15-2989658bff35",
+      "a6c22d71-d855-44aa-b1f9-6f4c435fc39f"
+    ],
+    "currentFileId": "a6c22d71-d855-44aa-b1f9-6f4c435fc39f",
+    "resources": {
+      "apigusWest2InventarioGatewayinventarioany": {
+        "name": "apigusWest2InventarioGatewayinventarioany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-west-2",
+          "apiMode": 0,
+          "apiName": "InventarioGateway",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "inventario",
+          "resourcePath": "/inventario",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Prod",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "a6c22d71-d855-44aa-b1f9-6f4c435fc39f",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/InventariosKOF",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "tinys3": {
+          "name": "tinys3",
+          "version": "tinys3",
+          "dev": false,
+          "language": "python"
+        },
+        "pandas": {
+          "name": "pandas",
+          "version": "0.25.0",
+          "dev": false,
+          "language": "python"
+        },
+        "xlrd": {
+          "name": "xlrd",
+          "version": "1.2.0",
+          "dev": false,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "InventariosKOF",
+    "projectDescription": "Inventarios",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-west-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1566510810909
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "InventariosKOF",
+      "url": "https://github.com/Kevin-Olascoaga/InventariosKOF"
+    }
+  }
+}
