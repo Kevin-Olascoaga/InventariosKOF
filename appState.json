@@ -122,12 +122,6 @@
     ],
     "packageJSON": {
       "dependencies": {
-        "tinys3": {
-          "name": "tinys3",
-          "version": "tinys3",
-          "dev": false,
-          "language": "python"
-        },
         "pandas": {
           "name": "pandas",
           "version": "0.25.0",
@@ -137,6 +131,12 @@
         "xlrd": {
           "name": "xlrd",
           "version": "1.2.0",
+          "dev": false,
+          "language": "python"
+        },
+        "tinys3": {
+          "name": "tinys3",
+          "version": "0.1.12",
           "dev": false,
           "language": "python"
         }
@@ -150,7 +150,7 @@
     "projectRegion": "us-west-2",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1566510810909
+    "lastSave": 1566510940690
   },
   "VCS_STATE": {
     "provider": "GitHub",
